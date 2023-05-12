@@ -1,0 +1,29 @@
+<div class="container ">
+  <div class="col-3">
+    <mat-card class="myCard text-center ">
+    <form  [formGroup] ="saveCardForm" (submit)="saveCard()">
+<div class="col-3">
+
+  <mat-form-field fxFlex="30">
+    <input matInput placeholder="Nome" formControlName="name" type="text">
+  </mat-form-field>
+</div>
+
+<div class="col-3">
+      <mat-form-field fxFlex="30">
+        <input matInput placeholder="git" formControlName="gitHubUrl" type="text">
+      </mat-form-field>
+</div>
+<div class="col-3">
+
+  <mat-form-field fxFlex="30" >
+    <input matInput placeholder="linkedin" formControlName="linkedinUrl" type="text">
+  </mat-form-field>
+</div>
+
+      <section></section>
+        <button mat-raised-button class="btn-create" color="primary" type="submit">SALVAR</button>
+    </form>
+  </mat-card >
+  </div>
+</div>

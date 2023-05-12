@@ -1,0 +1,13 @@
+.container{
+  padding-top: 64px;
+  padding-left: 25%;
+  padding-right: 50%;
+
+  display: flex;
+
+}
+
+.btn-create {
+font-size: 12px;
+
+}
