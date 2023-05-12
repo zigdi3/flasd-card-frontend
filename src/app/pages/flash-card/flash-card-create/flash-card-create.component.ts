@@ -1,8 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FlashCardService } from '../../../core/service/flash-card.service';
-import { Profile } from '../profile/profile';
-import { takeUntilDestroy } from 'src/shared/take-until-destroy';
 import { FormBuilder, FormControl, FormControlName, FormGroup, Validators } from '@angular/forms';
+import { takeUntilDestroy } from 'src/shared/take-until-destroy';
 
 @Component({
   selector: 'app-flash-card-create',
@@ -35,7 +34,7 @@ export class FlashCardCreateComponent implements OnInit {
       debugger;
       console.log(body);
 
-      this.flashCardService.post(body, '/save').subscribe(res => {
+      this.flashCardService.post(body, '/save').pipe(takeUntilDestroy(this)).subscribe(res => {
         this.clearFields();
       });
     } else {

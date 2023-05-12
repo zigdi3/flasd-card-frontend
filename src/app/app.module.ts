@@ -7,7 +7,6 @@ import { AppMaterialModules } from './material.module';
 import { AppRoutingModule } from './app.routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FlashCardModule } from './pages/flash-card/flash-card-view/flash-card-view.module';
 import { FlashCardCreateModule } from './pages/flash-card/flash-card-create/flash-card-create.module';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { FlashCardCreateModule } from './pages/flash-card/flash-card-create/flas
     CommonModule,
     AppRoutingModule,
     AppMaterialModules,
-    FlashCardModule,
     FlashCardCreateModule
   ],
   providers: [],
